@@ -7,11 +7,16 @@ springsecurity3"><head>
 </head>
 
 <body>
-<h1 th:inline="text">Welcome to your Favorite Reading List Application!!!
-</h1>
-<form th:action="@{/logout}" method="post">
-    <input type="submit" value="Sign Out"/>
-</form>
+<div class="fullpage" style="color: blueviolet"  >
+    <div class="header" style="background-color: antiquewhite">
+        <h1 th:inline="text">Welcome to your Favorite Reading List Application!!!
+        </h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+    </div>
+</div>
+
 
 </body>
 </html>
