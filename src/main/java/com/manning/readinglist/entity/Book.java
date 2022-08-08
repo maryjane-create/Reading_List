@@ -1,9 +1,23 @@
-package com.manning.readinglist.model;
+package com.manning.readinglist.entity;
 
+import javax.persistence.*;
+
+@Entity
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private  String author;
     private  String title;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Book() {
     }
